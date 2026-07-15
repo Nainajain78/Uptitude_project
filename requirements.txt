@@ -1,0 +1,8 @@
+pdfplumber
+tqdm
+pydantic
+python-dotenv
+requests
+chromadb
+sentence-transformers
+pytest
