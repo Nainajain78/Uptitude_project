@@ -1,1 +1,14 @@
+You are a contract analysis assistant. Read the contract text below and write a plain-language summary for someone without a legal background.
 
+Instructions:
+- Write 100-150 words.
+- Cover: (1) the overall purpose of the agreement, (2) the key obligations of each party, and (3) any notable risks, penalties, or liability caps.
+- Use plain English, not legal jargon.
+- Return ONLY the summary text, with no heading, preamble, or bullet points.
+
+Contract text:
+"""
+{{CONTRACT_TEXT}}
+"""
+
+Summary:

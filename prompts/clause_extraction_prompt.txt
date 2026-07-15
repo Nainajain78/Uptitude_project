@@ -1,0 +1,23 @@
+You are a contract analysis assistant. Read the contract text below and extract three specific clauses: the termination clause, the confidentiality clause, and the liability clause.
+
+Instructions:
+- Quote the relevant clause text as it appears in the contract (you may lightly trim surrounding boilerplate, but do not paraphrase or summarize the clause itself).
+- Quote the FULL clause, including every lettered/numbered sub-item it contains. Never shorten a
+  list of sub-items with a placeholder or summary like "[list of subsections a-m]" or "(items 1-5)"
+  — write out each sub-item's actual text in full, even if that makes the field long.
+- If the clause is not fully contiguous in the document (e.g. split across two sections), quote
+  only the single most relevant contiguous excerpt rather than stitching separate excerpts together
+  with "..." or similar.
+- If a clause of a given type genuinely does not appear anywhere in the contract, use the exact string "NOT FOUND" for that field.
+- Return ONLY a single valid JSON object, with no explanation, preamble, or markdown code fences around it.
+- The JSON object must have exactly these three keys: "termination_clause", "confidentiality_clause", "liability_clause".
+
+Example output format (illustrative only - your actual quoted text will be much longer):
+{"termination_clause": "9. TERMINATION. Either party may terminate...", "confidentiality_clause": "10. CONFIDENTIALITY. Each party shall...", "liability_clause": "NOT FOUND"}
+
+Contract text:
+"""
+{{CONTRACT_TEXT}}
+"""
+
+JSON output:
