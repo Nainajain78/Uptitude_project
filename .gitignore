@@ -1,0 +1,13 @@
+data/raw/
+data/processed/
+.env
+__pycache__/
+venv/
+.pytest_cache/
+
+# Ignore everything else generated under outputs/ (e.g. the Chroma vector
+# store, ad-hoc test runs), but keep the actual submission deliverable.
+outputs/*
+!outputs/.gitkeep
+!outputs/results.csv
+!outputs/results.json
